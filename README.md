@@ -1,1 +1,2 @@
-# dotfiles
+## Configs
++ [NeoVim](https://neovim.io/)
