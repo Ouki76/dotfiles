@@ -6,8 +6,14 @@ vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.autoindent = true
 
---- Mouse
+--- Mouse & cursor
 vim.opt.mouse = 'a'
+vim.cmd [[
+    augroup change_cursor
+        au!
+        au ExitPre * :set guicursor=a:ver90
+    augroup END
+]]
 
 --- Other
 vim.opt.number = true
